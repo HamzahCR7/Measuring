@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Measuring Units</title>
+	<meta charset="utf-8">
+		<meta name="viewport"content="with=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			  <style>
+			  	body{
+			  		margin-top: 70px;
+			  		background: #333;
+			  	}
+			  		  	.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: 	
+
+ #00ffff;
+  color: #000;
+  text-align: center;
+}
+.footer :hover{
+color: #0066ff;
+}
+			  </style>
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1 class="display-4 text-center text-warning">Measuring Units</h1>
+			<form >
+				<div class="form-group">
+					<input id="feetinpt" type="number" name="" placeholder="Enter in feet" class="form-control form-control-lg">
+				</div>
+				
+			</form>
+			<div id="output">
+				<div class="card bg-info pl-3 mb-2">
+					<div class="card-block">
+						<h4>Inch:</h4>
+						<div id="inchotpt"></div>
+					</div>
+				</div>
+				<div class="card bg-primary pl-3 mb-2">
+					<div class="card-block">
+						<h4>meter:</h4>
+						<div id="motpt"></div>
+					</div>
+				</div>
+				<div class="card bg-success  pl-3 mb-2">
+					<div class="card-block">
+						<h4>cm:</h4>
+						<div id="cmotpt"></div>
+					</div>
+				</div>
+				<div class="card bg-danger pl-3 mb-2">
+					<div class="card-block">
+						<h4>mm:</h4>
+						<div id="mmotpt"></div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<form >
+				<div class="form-group">
+					<input id="minpt" type="number" name="" placeholder="Enter in meter" class="form-control form-control-lg">
+				</div>
+				
+			</form>
+			<div id="output1">
+				<div class="card bg-info pl-3 mb-2">
+					<div class="card-block">
+						<h4>Feet:</h4>
+						<div id="feetotpt"></div>
+					</div>
+				</div>
+				<div class="card bg-primary pl-3 mb-2">
+					<div class="card-block">
+						<h4>Inch:</h4>
+						<div id="inchotpt1"></div>
+					</div>
+				</div>
+				<div class="card bg-success  pl-3 mb-2">
+					<div class="card-block">
+						<h4>cm:</h4>
+						<div id="cmotpt1"></div>
+					</div>
+				</div>
+				<div class="card bg-danger pl-3 mb-2">
+					<div class="card-block">
+						<h4>mm:</h4>
+						<div id="mmotpt1"></div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<form >
+				<div class="form-group">
+					<input id="cminpt" type="number" name="" placeholder="Enter in cm" class="form-control form-control-lg">
+				</div>
+				
+			</form>
+			<div id="output2">
+				<div class="card bg-info pl-3 mb-2">
+					<div class="card-block">
+						<h4>Feet:</h4>
+						<div id="feetotpt1"></div>
+					</div>
+				</div>
+				<div class="card bg-primary pl-3 mb-2">
+					<div class="card-block">
+						<h4>Inch:</h4>
+						<div id="inchotpt2"></div>
+					</div>
+				</div>
+				<div class="card bg-success  pl-3 mb-2">
+					<div class="card-block">
+						<h4>Meter:</h4>
+						<div id="motpt1"></div>
+					</div>
+				</div>
+				<div class="card bg-danger pl-3 mb-2">
+					<div class="card-block">
+						<h4>mm:</h4>
+						<div id="mmotpt2"></div>
+					</div>
+				</div>
+			</div>
+			<form >
+				<div class="form-group">
+					<input id="mminpt" type="number" name="" placeholder="Enter in mm" class="form-control form-control-lg">
+				</div>
+				
+			</form>
+			<div id="output3">
+				<div class="card bg-info pl-3 mb-2">
+					<div class="card-block">
+						<h4>Feet:</h4>
+						<div id="feetotpt2"></div>
+					</div>
+				</div>
+				<div class="card bg-primary pl-3 mb-2">
+					<div class="card-block">
+						<h4>Inch:</h4>
+						<div id="inchotpt3"></div>
+					</div>
+				</div>
+				<div class="card bg-success  pl-3 mb-2">
+					<div class="card-block">
+						<h4>Meter:</h4>
+						<div id="motpt2"></div>
+					</div>
+				</div>
+				<div class="card bg-danger pl-3 mb-2">
+					<div class="card-block">
+						<h4>cm:</h4>
+						<div id="cmotpt2"></div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<form >
+				<div class="form-group">
+					<input id="inchinpt" type="number" name="" placeholder="Enter in inch" class="form-control form-control-lg">
+				</div>
+				
+			</form>
+
+			<div id="output4">
+				<div class="card bg-info pl-3 mb-2">
+					<div class="card-block">
+						<h4>Feet:</h4>
+						<div id="feetotpt3"></div>
+					</div>
+				</div>
+				<div class="card bg-primary pl-3 mb-2">
+					<div class="card-block">
+						<h4>Meter:</h4>
+						<div id="motpt3"></div>
+					</div>
+				</div>
+				<div class="card bg-success pl-3 mb-2">
+					<div class="card-block">
+						<h4>cm:</h4>
+						<div id="cmotpt3"></div>
+					</div>
+				</div>
+				<div class="card bg-danger pl-3 mb-2">
+					<div class="card-block">
+						<h4>mm:</h4>
+						<div id="mmotpt3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<footer class="footer">
+	<h6 class="text-center">Copyright © 2020, Design by Hamzah Aslam</h6>
+
+</footer>
+<script>
+
+	document.getElementById('output').style.visibility ='hidden';
+	document.getElementById('feetinpt').addEventListener('input',function(e){
+		// console.log(123);
+			document.getElementById('output').style.visibility='visible';
+
+		let feet=e.target.value;
+		// console.log(kg);
+				document.getElementById('inchotpt').innerHTML=(feet*12).toFixed(2);
+
+		document.getElementById('motpt').innerHTML=(feet*0.3048).toFixed(2);
+				document.getElementById('cmotpt').innerHTML=(feet*30.48).toFixed(2);
+
+		document.getElementById('mmotpt').innerHTML=(feet*304.8).toFixed(2);
+
+	});
+
+	document.getElementById('output1').style.visibility ='hidden';
+	document.getElementById('minpt').addEventListener('input',function(e){
+		// console.log(123);
+			document.getElementById('output1').style.visibility='visible';
+
+		let m=e.target.value;
+		// console.log(kg);
+		document.getElementById('feetotpt').innerHTML=(m*3.28084).toFixed(2);
+
+				document.getElementById('inchotpt1').innerHTML=((m*3.28084)*12).toFixed(2);
+
+		document.getElementById('cmotpt1').innerHTML=((m*3.28084)*30.48).toFixed(2);
+				document.getElementById('mmotpt1').innerHTML=((m*3.28084)*304.8).toFixed(2);
+
+
+	});
+
+	document.getElementById('output2').style.visibility ='hidden';
+	document.getElementById('cminpt').addEventListener('input',function(e){
+		// console.log(123);
+			document.getElementById('output2').style.visibility='visible';
+
+		let cm=e.target.value;
+		// console.log(kg);
+		document.getElementById('feetotpt1').innerHTML=(cm*0.0328084).toFixed(2);
+
+				document.getElementById('inchotpt2').innerHTML=((cm*0.0328084)*12).toFixed(2);
+
+		document.getElementById('motpt1').innerHTML=((cm*0.0328084)*0.3048).toFixed(2);
+				document.getElementById('mmotpt2').innerHTML=((cm*0.0328084)*304.8).toFixed(2);
+
+
+	});
+	document.getElementById('output3').style.visibility ='hidden';
+	document.getElementById('mminpt').addEventListener('input',function(e){
+		// console.log(123);
+			document.getElementById('output3').style.visibility='visible';
+
+		let mm=e.target.value;
+		// console.log(kg);
+		document.getElementById('feetotpt2').innerHTML=(mm*0.00328084).toFixed(2);
+
+				document.getElementById('inchotpt3').innerHTML=((mm*0.00328084)*12).toFixed(2);
+
+		document.getElementById('motpt2').innerHTML=((mm*0.00328084)*0.3048).toFixed(2);
+				document.getElementById('cmotpt2').innerHTML=((mm*0.00328084)*30.48).toFixed(2);
+
+
+	});
+	document.getElementById('output4').style.visibility ='hidden';
+	document.getElementById('inchinpt').addEventListener('input',function(e){
+		// console.log(123);
+			document.getElementById('output4').style.visibility='visible';
+
+		let inch=e.target.value;
+		// console.log(kg);
+				document.getElementById('feetotpt3').innerHTML=(inch/12).toFixed(2);
+
+		document.getElementById('motpt3').innerHTML=((inch/12)*0.3048).toFixed(2);
+				document.getElementById('cmotpt3').innerHTML=((inch/12)*30.48).toFixed(2);
+
+		document.getElementById('mmotpt3').innerHTML=((inch/12)*304.8).toFixed(2);
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// 	document.getElementById('output2').style.visibility ='hidden';
+	// document.getElementById('pdinpt').addEventListener('input',function(e){
+	// 	// console.log(123);
+	// 		document.getElementById('output2').style.visibility='visible';
+
+	// 	let pd=e.target.value;
+	// 	// console.log(kg);
+	// 	document.getElementById('kgotpt1').innerHTML=(pd/2.205).toFixed(2);
+	// 			document.getElementById('gmotpt1').innerHTML=((pd/2.205)*1000).toFixed(2);
+
+	// 	document.getElementById('onceotpt2').innerHTML=((pd/2.205)*35.274).toFixed(2);
+
+	// });
+	// document.getElementById('gmotpt').addEventListener('input',function(e){
+	// 	// console.log(123);
+	// 		// document.getElementById('output').style.visibility='visible';
+
+	// 	let kg=e.target.value;
+	// 	// console.log(kg);
+	// 	document.getElementById('gmotpt').innerHTML=kg*1000;
+	// 			document.getElementById('pdotpt').innerHTML=kg*2.205;
+
+	// 	document.getElementById('onceotpt').innerHTML=kg*35.274;
+
+	// });
+
+	</script>
+</body>
+</html>
